@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Deploy') {
+      steps {
+        sh 'docker run -ti madan1742/hellomylove'
+      }
+    }
+
   }
 }
